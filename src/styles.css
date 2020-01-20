@@ -1,0 +1,17 @@
+/* Add application styles & imports to this file! */
+body {
+  font-family: 'Courier New', Courier, monospace
+}
+
+h1 {
+  color: brown;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
