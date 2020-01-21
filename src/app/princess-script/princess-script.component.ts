@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { princessList } from '../princesses';
+import { DataService } from "../data.service";
 
 @Component({
   selector: 'app-princess-script',
@@ -10,9 +11,9 @@ import { princessList } from '../princesses';
 export class PrincessScriptComponent implements OnInit {
 
   princess;
-  princesses = princessList;
+  princesses = this.dataService.princessList;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
